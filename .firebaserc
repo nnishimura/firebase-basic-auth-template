@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "example.com"
+  },
+  "targets": {
+    "example.com": {
+      "hosting": {
+        "www.example.com": [
+          "www.example.com"
+        ],
+        "sub.example.com": [
+          "sub.example.com"
+        ]
+      }
+    }
+  }
+}

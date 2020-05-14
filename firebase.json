@@ -1,0 +1,44 @@
+{
+  "hosting": [
+    {
+      "target": "www.example.com",
+      "public": "public/www.example.com",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "appServer"
+        }
+      ],
+      "redirects": [{
+        "source": "/",
+        "destination": "/auth",
+        "type": 301
+      }],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "sub.example.com",
+      "public": "public/sub.example.com",
+      "redirects": [{
+        "source": "/",
+        "destination": "/auth",
+        "type": 301
+      }],
+      "rewrites": [
+        {
+          "source": "**",
+          "function": "appServer"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}
