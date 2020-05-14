@@ -32,8 +32,8 @@ firebase deploy
 
 ## Known issue
 
-Basic auth only works for root path. You can use this apparoch to get around this issue
-But you won't be able to deploy for each site
+Basic auth only works for root path. You can use this approach https://qiita.com/567000/items/65f55eda8d7c6df09138 to get around the issue
+But you won't be able to deploy per each site
 
 ## Reference
 
